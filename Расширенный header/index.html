@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS практика</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom scroll -->
+    <link rel="stylesheet" href="./libs/scroll/simplebar.css">
+    <link rel="stylesheet" href="./css/simplebar.css">
+</head>
+<body class="scroll">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__logo">PracticeJS</a>
+                <div class="header__menu menu">
+                    <button class="header__burger burger">
+                        <span class="burger__line"></span>
+                    </button>
+                    <div class="menu__nav">
+                        <ul class="menu__list" id="menu">
+                            <li class="menu__item" data-goto=".about">
+                                <a href="#" class="menu__link">О компании</a>
+                            </li>
+                            <li class="menu__item" data-goto=".order">
+                                <a href="#" class="menu__link">Как заказать</a>
+                            </li>
+                            <li class="menu__item" data-goto=".payment">
+                                <a href="#" class="menu__link">Оплата</a>
+                            </li>
+                            <li class="menu__item" data-goto=".price">
+                                <a href="#" class="menu__link">Прайс</a>
+                            </li>
+                            <li class="menu__item" data-goto=".testimonials">
+                                <a href="#" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item" data-goto=".contacts">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="header__info">
+                            <div class="header__items">
+                                <a href="#" class="header__link">
+                                    <img src="./img/location.svg" alt="Локация" class="header__icon">
+                                    Адрес: Суюнбая 152Г
+                                </a>
+                                <!-- Dropdown -->
+                                <div class="dropdown closed">
+                                    <div class="dropdown__header">
+                                        <img src="./img/phone.svg" alt="Телефоны" class="header__icon">
+                                        Телефон
+                                        <img src="./img/dropdown.svg" alt="Открыть список" class="dropdown__icon">
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item"><a href="tel:+77052225555" class="dropdown__link">Телефон: +77052225555</a></li>
+                                        <li class="dropdown__item"><a href="tel:+77475552211" class="dropdown__link">Доп.телефон: +77475552277</a></li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__title">Какой-то заголовок</h1>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Burger menu -->
+    <script src="./js/burger.js"></script>
+    <!-- ScrollHeader BG -->
+    <script src="./js/scrollHeader.js"></script>
+    <!-- Dropdown -->
+    <script src="./js/dropdown.js"></script>
+    <!-- Scroll custom -->
+    <script src="./libs/scroll/simplebar.js"></script>
+    <script src="./js/scroll.js"></script>
+</body>
+</html>
